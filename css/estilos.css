@@ -46,16 +46,20 @@ ul.menu {
 }
 
 ul.menu li {
-	margin-top: 90px;
+	margin-top: 95px;
   float: right;
   width: 20%%;
 }
 
 ul.menu li a {
-  padding: .3em;
+  padding: .9em;
+	margin-right: -15px;
 	font-size: 20px;
-  text-decoration: none;
 	color: white;
+}
+
+.Inicio{
+  text-decoration: none;
 }
 
 .c2 {
@@ -67,6 +71,8 @@ ul.menu li a {
 .img1{
 	width: 100%;
 	height: 100%;
+	height: 240px !important;
+	margin-top: -10px !important;
 }
 
 .c3 {
@@ -109,17 +115,15 @@ img{
 	height: 20px;
 }
 
-
-
 ul{
 	list-style: none;
 }
-
 
 @media screen and (min-width: 900px) {
 .c1 {
 	width: 100%;
 }
+
 .img1,.img2,.img3{
 	width: 100%;
 }
@@ -180,7 +184,6 @@ ul{
 		width: 100%;
 	}
 
-
 	.left{
 		margin-top: -50px;
 	}
@@ -230,6 +233,5 @@ ul{
 	width: 100%;
 	order: 4;
 }
-
 
 }
