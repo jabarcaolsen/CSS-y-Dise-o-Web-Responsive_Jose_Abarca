@@ -6,9 +6,7 @@ body{
 }
 
 .container {
-	margin: 0;
-	padding: 0;
-	width: 100%;
+	margin:900px, 900px;
 }
 
 .container div {
@@ -18,7 +16,7 @@ body{
 
 .c1 {
 	display: block;
-	height: 150px;
+	height: 100px;
   color: black;
 	color: white;
 	text-align: center;
@@ -95,6 +93,7 @@ article
   }
 
   .c3 {
+		margin-top: -20px;
     height: 100%;
   	width: 100%;
   	color: black;
@@ -119,25 +118,30 @@ article
 		list-style: none;
 	}
 
-  @media screen and (min-width: 900px) {
-  .c1, .c2, .c3 {
-  	width: 100%;
-    }
+	@media (min-width: 421px) and (max-width: 900px) {
+		.c1, .c2, .c3, .c4,{
+			width: 100%;
+		}
 
     .c2{
-      display: block;
+      display: inline-block;
       overflow: hidden;
     }
 
     .img1,.img2,.img3,.img4,.img5,.img6{
-      width: 170%;
-      height: 150%;
+      width: 200%;
+      height: 175%;
       }
 
+			.col1,.col2,.col3,.col4,.col5,.col6{
+					width: 25%;
+					height: 25%;
+			}
 
     .col1{
       order: 1;
       float: left;
+			margin-left: -40px;
     }
 
     .col2{
@@ -155,17 +159,21 @@ article
     .col4{
       float: left;
       order: 4;
+			margin-left: -40px;
+			margin-top: -50px;
     }
 
     .col5{
       float: left;
       margin-left: 80px;
+			margin-top: -50px;
       order: 5;
     }
 
     .col6{
       order: 6;
       float: right;
+			margin-top: -50px;
       margin-right: 80px;
     }
 
@@ -198,24 +206,25 @@ article
     	order: 4;
     }
 
-  }
+}
 
-    .col1,.col2,.col3,.col4,.col5,.col6{
-      width: 25%;
-      height: 25%;
-    }
-
-  }
-
-  @media screen and (max-width:400px) {
+  @media (max-width:400px) {
   	.c1, .c2, .c3{
   		width: 100%;
     }
 
+		.c1{
+			height: 150px;
+		}
 
     	article{
-    		height: 150px
+    		height: 100px
     	}
+
+			.img1,.img2,.img3,.img4,.img5,.img6{
+	      width: 100%;
+	      height: 100%;
+	      }
 
       .col1,.col2,.col3,.col4,.col5,.col6{
         width: 100%;
