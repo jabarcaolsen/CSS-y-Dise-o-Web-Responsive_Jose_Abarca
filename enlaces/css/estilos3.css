@@ -16,7 +16,7 @@ body{
 
 .c1 {
 	display: block;
-	height: 150px;
+	height: 100px;
   color: black;
 	color: white;
 	text-align: center;
@@ -93,6 +93,7 @@ article
   }
 
   .c3 {
+		margin-top: -20px;
     height: 100%;
   	width: 100%;
   	color: black;
@@ -117,127 +118,137 @@ article
 		list-style: none;
 	}
 
-  @media screen and (min-width: 900px) {
-  .c1, .c2, .c3 {
-  	width: 100%;
-    }
+	@media (min-width: 421px) and (max-width: 900px) {
+		.c1, .c2, .c3, .c4,{
+			width: 100%;
+		}
 
-    .c2{
-      display: block;
-      overflow: hidden;
-    }
+		.c2{
+			display: inline-block;
+			overflow: hidden;
+		}
 
-    .img1,.img2,.img3,.img4,.img5,.img6{
-      width: 170%;
-      height: 150%;
-      }
+		.img1,.img2,.img3,.img4,.img5,.img6{
+			width: 200%;
+			height: 175%;
+			}
 
+			.col1,.col2,.col3,.col4,.col5,.col6{
+					width: 25%;
+					height: 25%;
+			}
 
-    .col1{
-      order: 1;
-      float: left;
-    }
+		.col1{
+			order: 1;
+			float: left;
+			margin-left: -40px;
+		}
 
-    .col2{
-      order: 2;
-      float: left;
-      margin-left: 80px;
-    }
+		.col2{
+			order: 2;
+			float: left;
+			margin-left: 80px;
+		}
 
-    .col3{
-      order: 3;
-      float: right;
-      margin-right: 80px;
-    }
+		.col3{
+			order: 3;
+			float: right;
+			margin-right: 80px;
+		}
 
-    .col4{
-      float: left;
-      order: 4;
-    }
+		.col4{
+			float: left;
+			order: 4;
+			margin-left: -40px;
+			margin-top: -50px;
+		}
 
-    .col5{
-      float: left;
-      margin-left: 80px;
-      order: 5;
-    }
+		.col5{
+			float: left;
+			margin-left: 80px;
+			margin-top: -50px;
+			order: 5;
+		}
 
-    .col6{
-      order: 6;
-      float: right;
-      margin-right: 80px;
-    }
+		.col6{
+			order: 6;
+			float: right;
+			margin-top: -50px;
+			margin-right: 80px;
+		}
 
-    .c3 {
-    	width: 100%;
-    	display: flex;
-    }
+		.c3 {
+			width: 100%;
+			display: flex;
+		}
 
-    .case1{
-    	float: left;
-    	width: 100%;
-    	order: 1;
-    }
+		.case1{
+			float: left;
+			width: 100%;
+			order: 1;
+		}
 
-    .case2{
-    	float: left;
-    	width: 100%;
-    	order: 2;
-    }
+		.case2{
+			float: left;
+			width: 100%;
+			order: 2;
+		}
 
-    .case3{
-    	float: right;
-    	width: 100%;
-    	order: 3;
-    }
+		.case3{
+			float: right;
+			width: 100%;
+			order: 3;
+		}
 
-    .case4{
-    	float: right;
-    	width: 100%;
-    	order: 4;
-    }
+		.case4{
+			float: right;
+			width: 100%;
+			order: 4;
+		}
 
-  }
+	}
 
-    .col1,.col2,.col3,.col4,.col5,.col6{
-      width: 25%;
-      height: 25%;
-    }
+	@media (max-width:400px) {
+		.c1, .c2, .c3{
+			width: 100%;
+		}
 
-  }
+		.c1{
+			height: 150px;
+		}
 
-  @media screen and (max-width:400px) {
-  	.c1, .c2, .c3{
-  		width: 100%;
-    }
+			article{
+				height: 100px
+			}
 
+			.img1,.img2,.img3,.img4,.img5,.img6{
+				width: 100%;
+				height: 100%;
+				}
 
-    	article{
-    		height: 150px
-    	}
+			.col1,.col2,.col3,.col4,.col5,.col6{
+				width: 100%;
+				height: 100%;
+			}
 
-      .col1,.col2,.col3,.col4,.col5,.col6{
-        width: 100%;
-        height: 100%;
-      }
+			.case1{
+				width: 100%;
+				order: 1;
+			}
 
-      .case1{
-      	width: 100%;
-      	order: 1;
-      }
+			.case2{
+				width: 100%;
+				order: 2;
+			}
 
-      .case2{
-      	width: 100%;
-      	order: 2;
-      }
+			.case3{
+				width: 100%;
+				order: 3;
+			}
 
-      .case3{
-      	width: 100%;
-      	order: 3;
-      }
+			.case4{
+				width: 100%;
+				order: 4;
+			}
 
-      .case4{
-      	width: 100%;
-      	order: 4;
-      }
-
-    }
+		}
