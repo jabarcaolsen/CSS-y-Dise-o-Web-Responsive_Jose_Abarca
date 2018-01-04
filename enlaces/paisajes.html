@@ -7,11 +7,36 @@
   <title>Paisajes</title>
   <link href="css/estilos2.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <style media="screen">
 
+  #container{
+    width:  auto;
+    height:  auto;
+    margin: 0 auto;
+    transition-property: margin-top;
+    animation: slidein 1s;
+
+  }
+
+  @-webkit-keyframes slidein {
+
+    100%{
+      margin-top: 0%;
+    }
+
+    60%{
+      margin-top: -5%;
+    }
+
+    0%{
+      margin-top: 150%;
+    }
+  }
+  </style>
 </head>
 
 <body>
-  <div class="container" role="main">
+  <div id="container" class="container" role="main">
 	<header >
 			<div class="c1">
 				<div class="left">

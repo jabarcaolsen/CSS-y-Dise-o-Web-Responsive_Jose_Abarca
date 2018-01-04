@@ -6,7 +6,9 @@ body{
 }
 
 .container {
-	margin:900px, 900px;
+	width: 900px;
+	height: 900px;
+	margin:0 auto;
 }
 
 .container div {
