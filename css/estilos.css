@@ -7,7 +7,6 @@ body{
 
 #container{
 	width: 900px;
-	height: 900px;
 	margin: 0 auto;
 	transition-property: margin-top;
 	animation: slidein 1s;
@@ -45,12 +44,12 @@ body{
 
 .left{
 	float: left;
-	margin-left: 25px;
+	padding-left: 2%;
 }
 
 .right{
 	float: right;
-	margin-top: 25px;
+	padding-top: 2%;
 }
 
 ul.menu {
@@ -77,17 +76,13 @@ ul.menu li a {
 
 .c2 {
 	background-color: #82c3a6;
-	height: 350px;
+	height: 100%;
 	width: 100%;
 }
 
 .img1{
 	width: 100%;
 	height: 100%;
-}
-
-.img1{
-	height: 310px;
 }
 
 .c3 {
@@ -97,18 +92,12 @@ ul.menu li a {
 	width: 100%;
 }
 
-.c3{
-	height:300px;
-}
-
 .columna2{
 	float: left;
-	margin-top: 4px;
 }
 
 .columna3{
 	float: right;
-	margin-top: 1px;
 }
 article
 {
@@ -121,12 +110,11 @@ article
 
 img{
 	box-shadow: 2px 2px 5px #02010a;
-	width: 400px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 }
 .c4 {
 	display: flex;
-	margin-top: -21px;
 	padding: 5%;
 	color: black;
 	background-color: #C6d5c5;
@@ -170,119 +158,133 @@ ul{
 	list-style: none;
 }
 
-@media (min-width: 421px) and (max-width: 900px) {
+@media (max-width: 900px) {
 	.c1, .c2, .c3, .c4,{
 		width: 100%;
 	}
 
 	#container{
-		width: 800px;
-		height: 800px;
+		width: 100%;
 		margin: 0 auto;
 	}
 
-	.img1{
-		height: 310px;
-	}
-
-	.c3{
-		display: inline-flex;
-		height: 300px;
-	}
-
-	.columna2{
-		float: left;
-		width: 500px;
-		margin-top: 4px;
-	}
-
-	.columna3{
-		float: right;
-		width: 500px;
-		margin-top: 0px;
-		margin-left: 10px;
-	}
-
-	.img2,.img3{
-		width: 100%;
-	}
-
-	.c4{
-		display: flex;
-	}
-
-	.case1{
-		width: 100%;
-		order: 1;
-	}
-
-	.case2{
-		width: 100%;
-		order: 2;
-	}
-
-	.case3{
-		width: 100%;
-		order: 3;
-	}
-
-	.case4{
-		width: 100%;
-		order: 4;
+	.right{
+		padding-top:2%;
 	}
 
 }
 
-@media (max-width: 400px) {
-	.c1, .c2, .c3, .c4,{
-		width: 100%;
-	}
+@media (max-width: 700px) {
 
 	#container{
-		width: 340px;
-		height: 340px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.c1{
 		display: block;
-		height: 150px;
+		height: 8em;
+	}
+
+	.left{
+		float: left;
+	}
+	.right{
+		float: right;
 	}
 
 	.c2{
-		height: 270px;
+		height: 100%;
 	}
 
 	.img1{
 		width: 100%;
 		height: 100%;
+		margin-left: -5%;
+	}
+
+	.c3{
+		display: flex;
+		height: 100%;
+	}
+
+	.columna2,.columna3{
+		width: 100%;
+	}
+
+.img2,.img3{
+	width: 100%;
+	height: 100%;
+}
+
+.c4{
+	display: block;
+	padding: 5%;
+}
+
+.case1{
+	width: 100%;
+	order: 1;
+}
+
+.case2{
+	width: 100%;
+	order: 2;
+}
+
+.case3{
+	width: 100%;
+	order: 3;
+}
+
+.case4{
+	width: 100%;
+	order: 4;
+}
+
+}
+
+@media (max-width: 400px) {
+
+	#container{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.c1{
+		display: block;
+		height: 10em;
+	}
+
+	.titulo{
+		margin-right: 10%
 	}
 
 	.left{
 		float: left;
+		margin-left: 15%;
 
 	}
 	.right{
 		float: right;
-		margin-top: -5px;
-		margin-right: 25px;
+		margin-top: -5%;
+		margin-right: 12%;
+	}
 
+	.c2{
+		height: 10em;
+	}
+
+	.img1{
+		width: 110%;
+		height: 80%;
+		margin-left: -5%;
 	}
 
 	.c3{
-		display: block;
-		height: 530px;
+		display:flow-root;
+		height: 100%;
 	}
-
-	article{
-		height: 250px
-	}
-
-.img2,.img3{
-	width: 90%;
-	height: 90%;
-	float: left;
-	margin-left: 16px;
-}
 
 .c4{
 	display: block;
