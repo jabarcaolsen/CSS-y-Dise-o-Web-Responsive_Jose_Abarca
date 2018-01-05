@@ -14,7 +14,7 @@ body{
 
 }
 
-@-webkit-keyframe slidein {
+@-webkit-keyframes slidein {
 
 	100%{
 		margin-top: 0%;

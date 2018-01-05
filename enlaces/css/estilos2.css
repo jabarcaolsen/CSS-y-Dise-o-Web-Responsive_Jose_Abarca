@@ -5,15 +5,28 @@ body{
 	font-family: 'Dancing Script', cursive;
 }
 
-.container {
+#container{
 	width: 900px;
 	height: 900px;
-	margin:0 auto;
+	margin: 0 auto;
+	transition-property: margin-top;
+	animation: slidein 1s;
+
 }
 
-.container div {
-	box-sizing: border-box;
-	padding: 20px;
+@-webkit-keyframes slidein {
+
+	100%{
+		margin-top: 0%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	0%{
+		margin-top: 150%;
+	}
 }
 
 .c1 {
@@ -32,12 +45,13 @@ body{
 
 .left{
 	float: left;
-  margin-top: -50px;
+	padding-left: 20px;
 }
 
 .right{
 	float: right;
-  margin-top: -25px;
+	padding-top: 22px;
+	padding-right: 10px;
 }
 
 ul.menu {
@@ -53,7 +67,7 @@ ul.menu li {
 }
 
 ul.menu li a {
-  margin-right: 35px;
+	padding: .9em;
 	font-size: 20px;
 	color: white;
 }
@@ -62,13 +76,63 @@ ul.menu li a {
   text-decoration: none;
 }
 
-.c2 {
+.c2{
+	display: inline-block;
+	overflow: hidden;
+	padding: 2%;
 	background-color: #d5c75f;
-  height:auto;
 }
 
-article
-{
+.img1,.img2,.img3,.img4,.img5,.img6{
+	width: 200%;
+	height: 175%;
+	}
+
+	.col1,.col2,.col3,.col4,.col5,.col6{
+			width: 25%;
+			height: 25%;
+	}
+
+.col1{
+	order: 1;
+	float: left;
+	margin-left: -40px;
+}
+
+.col2{
+	order: 2;
+	float: left;
+	margin-left: 80px;
+}
+
+.col3{
+	order: 3;
+	float: right;
+	margin-right: 90px;
+}
+
+.col4{
+	float: left;
+	order: 4;
+	margin-left: -40px;
+	margin-top: -50px;
+}
+
+.col5{
+	float: left;
+	margin-left: 80px;
+	margin-top: -50px;
+	order: 5;
+}
+
+.col6{
+	order: 6;
+	float: right;
+	margin-top: -50px;
+	margin-right: 90px;
+}
+
+article{
 	box-sizing: border-box;
 	padding: 5%;
 	}
@@ -95,7 +159,7 @@ article
   }
 
   .c3 {
-		margin-top: -20px;
+		margin-top: -27px;
     height: 100%;
   	width: 100%;
   	color: black;
@@ -105,6 +169,36 @@ article
   	box-sizing: border-box;
   	font-size: 0.8em;
   }
+
+	.c3 {
+		width: 100%;
+		display: flex;
+		padding: 5%;
+	}
+
+	.case1{
+		float: left;
+		width: 100%;
+		order: 1;
+	}
+
+	.case2{
+		float: left;
+		width: 100%;
+		order: 2;
+	}
+
+	.case3{
+		float: right;
+		width: 100%;
+		order: 3;
+	}
+
+	.case4{
+		float: right;
+		width: 100%;
+		order: 4;
+	}
 
   .ft1{
   	display: block;
@@ -125,9 +219,27 @@ article
 			width: 100%;
 		}
 
+		#container{
+			width: 800px;
+			height: 800px;
+			margin: 0 auto;
+		}
+
+		.left{
+			float: left;
+			padding-left: 20px;
+		}
+
+		.right{
+			float: right;
+			padding-top: 22px;
+			padding-right: 10px;
+		}
+
     .c2{
       display: inline-block;
       overflow: hidden;
+			padding: 2%;
     }
 
     .img1,.img2,.img3,.img4,.img5,.img6{
@@ -182,6 +294,7 @@ article
     .c3 {
     	width: 100%;
     	display: flex;
+			padding: 5%;
     }
 
     .case1{
@@ -215,23 +328,82 @@ article
   		width: 100%;
     }
 
+		#container{
+			width: 340px;
+			height: 340px;
+		}
+
 		.c1{
 			height: 150px;
 		}
 
-    	article{
-    		height: 100px
-    	}
+		.left{
+			padding-left: 20px;
+		}
 
-			.img1,.img2,.img3,.img4,.img5,.img6{
-	      width: 100%;
-	      height: 100%;
-	      }
+		.right{
+			margin-top: -20px;
+			padding-right: 15px;
+		}
 
-      .col1,.col2,.col3,.col4,.col5,.col6{
-        width: 100%;
-        height: 100%;
-      }
+		.c2{
+			display: inline-block;
+			width: auto;
+			height: auto;
+		}
+
+		.col1{
+      order: 1;
+      float: left;
+			margin-left: 3px;
+    }
+
+    .col2{
+      order: 2;
+      float: left;
+			margin-left: -3px;
+    }
+
+    .col3{
+      order: 3;
+      float: left;
+    }
+
+    .col4{
+      float: left;
+      order: 4;
+			margin-top: 3px;
+			margin-left: 0.5px;
+    }
+
+    .col5{
+      float: left;
+      order: 5;
+			margin-top: 3px;
+			margin-left: -3px;
+    }
+
+    .col6{
+      order: 6;
+      float: left;
+			margin-top: 3px;
+    }
+
+		.img1,.img2,.img3,.img4,.img5,.img6{
+	    width: 100%;
+	    height: 100%;
+	  }
+
+    .col1,.col2,.col3,.col4,.col5,.col6{
+  		width: 100%;
+    	height: 100%;
+    }
+
+		.c3{
+			display: inline-block;
+			margin-top: -7px;
+			padding: 5%;
+		}
 
       .case1{
       	width: 100%;
